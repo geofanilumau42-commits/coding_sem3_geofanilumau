@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         window.onload = function(){
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        var rg=context.createRadialGradient(200,200,0,200,200,100);
+        rg.addColorStop(0,"#A7D30C");
+        rg.addColorStop(0.9,"#019F62");
+        rg.addColorStop(1,"rgba(1,159,98,0)");
+
+        context.fillStyle=rg;
+        context.beginPath();
+        context.arc(200,200,100,0,Math.PI*2);
+        context.fill();
+        
+         }
+    </script>
+</head>
+<body>
+     <canvas id="canvas" width="=500" height="500">
+        <strong>Canvas Supporting Browser Required</strong>
+    </canvas>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         window.onload = function(){
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        var lg = context.createLinearGradient(10, 150, 200, 200);
+        lg.addColorStop(0,"#B03060");
+        lg.addColorStop(0.5,"#4169E1");
+        lg.addColorStop(1,"#FFE4E1");
+
+        context.fillStyle=lg;
+        context.beginPath();
+        context.rect(10, 150, 200, 200);
+        context.fill();
+        
+         }
+    </script>
+</head>
+<body>
+     <canvas id="canvas" width="=300" height="300">
+        <strong>Canvas Supporting Browser Required</strong>
+    </canvas>
+
+</body>
+</html>

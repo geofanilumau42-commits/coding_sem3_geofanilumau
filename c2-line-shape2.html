@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         window.onload = function(){
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+        context.strokeStyle = "blue";
+        context.fillStyle = "red";
+        context.lineWidth = "10";
+
+        context.lineWidth = 10;
+        context.beginPath();
+        context.lineTo(200, 10);
+        context.lineTo(200, 50);
+        context.lineTo(380, 10);
+        context.closePath();
+        context.fill();
+        context.stroke();
+         }
+    </script>
+</head>
+<body>
+     <canvas id="canvas" width="=300" height="300">
+        <strong>Canvas Supporting Browser Required</strong>
+    </canvas>
+</body>
+</html>
