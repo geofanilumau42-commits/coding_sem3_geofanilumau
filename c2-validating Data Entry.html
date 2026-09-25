@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Vadilation</h1>
+    <form>
+        <p>
+            <label>
+                Nama:
+                <input type="text" name="firstname" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Nomor Telepon:
+                <input 
+                type="text" 
+                name="phonenum"
+                required
+                pattern="^\(d{3}\) \d{3}-\d{4}$"
+                title="Gunakan format (xxx) xxx-xxxx">
+            </label>
+        </p>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>

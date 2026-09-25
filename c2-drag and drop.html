@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dragbox {
+            width: 150px;
+            padding: 20px;
+            background: lightblue;
+            text-align: center;
+            cursor: grab;
+        }
+
+        #dropbox {
+            width: 250px;
+            height: 150px;
+            margin-top: 30px;
+            border: 3px dashed black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drag and Drop</h1>
+    <div id="dragbox" draggable="true">
+        Seret saya!
+    </div>
+
+    <div id="dropbox">
+        Lepaskan disini
+    </div>
+
+    <script>
+        var drag=document.getElementById("dragbox");
+        var drop=document.getElementById("dropbox");
+        
+        drag.addEventListener("dragover",function(event){
+            event.dataTransfer.setData("text",event.target.id);
+        });
+
+        drop.addEventListener("dragover",function(event){
+            event.preventDefault();
+        });
+
+        drop.addEventListener("drop",function(event){
+            event.preventDefault();
+
+            var id=event.dataTransfer.getData("text");
+            var element=document.getElementById(id);
+
+            drop.appendChild(element);
+        });  
+    </script>
+</body>
+</html>
