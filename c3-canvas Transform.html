@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="300"
+        style="border:1px solid black;"></canvas>
+
+        <script>
+            var canvas = document.getElementById("canvas");
+            var context = canvas.getContext("2d");
+
+            context.fillStyle = "red";
+            context.fillRect(20, 20, 100, 100);
+
+            context.save();
+
+            context.translate(150, 50);
+            context.rotate(Math.PI/8);
+
+            context.fillStyle = "blue";
+            context.fillRect(0, 0, 100, 100);
+
+            context.restore();
+
+            context.fillStyle = "green";
+            context.fillRect(300, 50, 100, 100);
+        </script>
+</body>
+</html>
