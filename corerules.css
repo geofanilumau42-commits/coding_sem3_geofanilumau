@@ -1,0 +1,13 @@
+h1 {
+    font-size: xx-large;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    border-bottom: solid 4px orange;
+}
+
+p {
+    text-indent: 1em;
+    text-align: justify;
+    line-height: 150%;
+}
