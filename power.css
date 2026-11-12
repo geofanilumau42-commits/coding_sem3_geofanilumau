@@ -1,0 +1,30 @@
+body {
+    font-family: georgia, serif;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+.boxed {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.three-columns {
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+p {
+    line-height: 1.6;
+}
