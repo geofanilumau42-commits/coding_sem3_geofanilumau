@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @-webkit-keyframes move {
+            from {left: 0; top: 0;}
+            50% {left: 300px;top: 0;}
+            to {left: 300px;top: 300px;}
+        }
+        @-webkit-keyframes resize {
+            from {width: 100px;height: 300px;}
+            50% {width: 100px;height: 100px;}
+            to {width: 300px;height: 100px;}
+        }
+        #anim1 {-webkit-animation-name: move, resize;
+                -webkit-animation-duration: 4s, 10s;
+                position: absolute;
+                background-color: blueviolet;}
+    </style>
+</head>
+<body>
+    <div id="anim1">Watch me move and change size!</div>
+</body>
+</html>

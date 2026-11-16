@@ -1,0 +1,12 @@
+<PUBLIC:COMPONENT
+URN="urn:msdn-microsoft-com:workshop"
+lightWeight="true">
+  <PUBLIC:ATTACH EVENT="onclick"FOR="element"
+ONEEVENT="sayHi()"/>
+
+  <SCRIPT LANGUAGE="JScript">
+    function sayhi(){
+      alert(Hello world from a bound HTC.");
+  }
+</SCRIPT>
+</PUBLIC:COMPONENT>

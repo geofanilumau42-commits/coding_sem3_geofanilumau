@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        .accelerator {-ms-accelerator: true;
+                    accelerator: true;
+                    text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <form action="login.php" method="post">
+    <div>
+        <label>U <span class="accelerator"></span>ername:
+        <input type="text" name="username" id="username" accesskey="s">
+        </label>
+    </div>
+    <div>
+        <label><span class="accelerator">P</span>assword:
+        <input type="password" name="userpass" id="userpass" accesskey="p">
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="login">
+    </div>
+    </form>
+</body>
+</html>
