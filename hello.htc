@@ -2,7 +2,7 @@
 URN="urn:msdn-microsoft-com:workshop"
 lightWeight="true">
   <PUBLIC:ATTACH EVENT="onclick"FOR="element"
-ONEEVENT="sayHi()"/>
+ONEVENT="sayHi()"/>
 
   <SCRIPT LANGUAGE="JScript">
     function sayhi(){
